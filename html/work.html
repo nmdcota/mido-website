@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My works</title>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/x-icon" href="/favicon/logo-favicon.ico">
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+
+    
+
+        
+    <!-- Stylesheet -->
+        
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <a href="../index.html"><img class="web-logo" src="/logo/logo-mido-color.svg" alt="Website logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a class="passive-nav" href="/index.html">HOME</a></li>
+                <li><a class="active-nav" href="/html/work.html">MY WORKS</a></li>
+                <li><a class="passive-nav" href="/html/about.html">ABOUT ME</a></li>
+            </ul>
+        </nav>
+        <a class="contact-button-link" href="/html/contact.html"><button class="contact-button">Contact</button></a>
+        <img src="/icon/bars-solid.svg" alt="Menu" id="menubutton" class="menu" onclick="toggleMenu()">
+    </header>
+
+    <!-- Dropdown Menu -->
+
+    <div id="menulist" class="drop-down-menu">
+        <div class="menu-link">
+            <div class="menu-item"><a href="/index.html">HOME</a></div>
+            <div class="menu-item"><a href="/html/work.html">MY WORKS</a></div>
+            <div class="menu-item"><a href="/html/about.html">ABOUT ME</a></div>
+            <div class="menu-item"><a href="/html/contact.html">CONTACT</a></div> 
+        </div>
+    </div>
+
+<!-- Main -->
+
+    <!-- My designs -->
+    
+    <div class="work-section">
+        <div class="design-bar">
+            <div class="design-bar-title"><a href="/html/design.html"><span>MY DESIGNS</span></a></div>
+            <div class="design-bar-container">
+                <a href="/html/design.html"><div class="design-button">
+                    <img class="img-image" src="/icon/icon-image.png">
+                    Click to explore
+                </div></a>
+                <!-- <div class="design-bar-filter">
+                    <div><button>All designs</button></div>
+                    <div><button>Infographic</button></div>
+                    <div><button>Print design</button></div>
+                    <div><button>Social design</button></div>
+                </div>
+                <div class="design-bar-more">See more</div> -->
+            </div>
+        </div>
+        <!-- <div class="design-line"><hr class="design-break-line"/></div> -->
+    
+        <div class="design-bar">
+            <div class="design-bar-title"><a href="/html/video.html"><span>MY VIDEOS</span></a></div>
+            <div class="design-bar-container">
+                <a href="/html/video.html"><div class="design-button">
+                    <img class="img-video"  src="/icon/icon-video.png">
+                    Click to explore
+                </div></a>
+                <!-- <div class="design-bar-filter">
+                    <div><button>All videos</button></div>
+                    <div><button>Explainer</button></div>
+                    <div><button>Generic videos</button></div>
+                    <div><button>Intro</button></div>
+                    <div><button>Social/Ads</button></div>
+                    <div><button>Videography</button></div>
+                </div>
+                <div class="design-bar-more">See more</div> -->
+            </div>
+        </div>
+    <!-- <div class="design-line"><hr class="design-break-line"/></div> -->
+    </div>
+
+    <!-- Animation Work -->
+
+
+
+
+    
+
+
+    
+
+    <!-- JavaScript -->
+
+    <script>
+
+        // Dropdown Menu
+    
+          let menulist = document.getElementById("menulist");
+          let menubutton = document.getElementById("menubutton");
+          function toggleMenu(){
+            menulist.classList.toggle("open-menu");
+            menubutton.classList.toggle("toggled-button");
+          }
+        </script>
