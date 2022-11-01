@@ -8,7 +8,7 @@
 
     <!-- Favicon -->
 
-    <link rel="icon" type="image/x-icon" href="/mido-website/favicon/logo-favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon/logo-favicon.ico">
     
     <!-- Stylesheet -->
     
@@ -22,33 +22,32 @@
 
     <!-- JS -->
 
-
 </head>
 <body>
 
     <!-- Navigation Bar -->
 
     <header>
-        <a href="/mido-website/index.html"><img class="web-logo" src="logo/logo-mido-color.svg" alt="Website logo"></a>
+        <a href="index.html"><img class="web-logo" src="logo/logo-mido-color.svg" alt="Website logo"></a>
         <nav>
             <ul class="nav__links">
-                <li><a class="active-nav" href="/mido-website/index.html">HOME</a></li>
-                <li><a class="passive-nav" href="/mido-website/html/work.html">MY WORKS</a></li>
-                <li><a class="passive-nav" href="/mido-website/html/about.html">ABOUT ME</a></li>
+                <li><a class="active-nav" href="index.html">HOME</a></li>
+                <li><a class="passive-nav" href="html/work.html">MY WORKS</a></li>
+                <li><a class="passive-nav" href="html/about.html">ABOUT ME</a></li>
             </ul>
         </nav>
-        <a class="contact-button-link" href="/mido-website/html/contact.html"><button class="contact-button">Contact</button></a>
-        <img src="/mido-website/icon/bars-solid.svg" alt="Menu" id="menubutton" class="menu" onclick="toggleMenu()">
+        <a class="contact-button-link" href="html/contact.html"><button class="contact-button">Contact</button></a>
+        <img src="icon/bars-solid.svg" alt="Menu" id="menubutton" class="menu" onclick="toggleMenu()">
     </header>
 
     <!-- Dropdown Menu -->
 
     <div id="menulist" class="drop-down-menu">
         <div class="menu-link">
-            <div class="menu-item"><a href="/mido-website/index.html">HOME</a></div>
-            <div class="menu-item"><a href="/mido-website/html/work.html">MY WORKS</a></div>
-            <div class="menu-item"><a href="/mido-website/html/about.html">ABOUT ME</a></div>
-            <div class="menu-item"><a href="/mido-website/html/contact.html">CONTACT</a></div> 
+            <div class="menu-item"><a href="index.html">HOME</a></div>
+            <div class="menu-item"><a href="html/work.html">MY WORKS</a></div>
+            <div class="menu-item"><a href="html/about.html">ABOUT ME</a></div>
+            <div class="menu-item"><a href="html/contact.html">CONTACT</a></div> 
         </div>
     </div>
 
@@ -62,13 +61,13 @@
             <p>&#10003; Motion Designer</p>
          </div>
          <div class="explore-container">
-            <a href="/mido-website/html/work.html"><button class="explore-button">Explore Now</button></a>
+            <a href="html/work.html"><button class="explore-button">Explore Now</button></a>
         </div>
     </div>
     
     <!-- Animation -->
     
-<div id="animation">
+    <div id="animation">
         <svg id="cr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path d="M1358.5,696h-300a150,150,0,0,1,300,0Z" transform="translate(-1058.5 -546)" fill="#811999"/></svg>
         <svg id="cr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path d="M1358.5,696h-300a150,150,0,0,1,300,0Z" transform="translate(-1058.5 -546)" fill="#CB2DE0"/></svg>
         <svg id="cr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path d="M1358.5,696h-300a150,150,0,0,1,300,0Z" transform="translate(-1058.5 -546)" fill="#653470"/></svg>
@@ -77,7 +76,7 @@
         <svg id="cr-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path d="M1358.5,696h-300a150,150,0,0,1,300,0Z" transform="translate(-1058.5 -546)" fill="#653470"/></svg>
         <svg id="cr-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path d="M1358.5,696h-300a150,150,0,0,1,300,0Z" transform="translate(-1058.5 -546)" fill="#CB2DE0"/></svg>
         <svg id="cr-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path d="M1358.5,696h-300a150,150,0,0,1,300,0Z" transform="translate(-1058.5 -546)" fill="#EEB5FB"/></svg>
-</div>
+    </div>
 
     <!-- JavaScript -->
 
@@ -87,11 +86,10 @@
 
       let menulist = document.getElementById("menulist");
       let menubutton = document.getElementById("menubutton");
-      function toggleMenu(){
+      function toggleMenu() {
         menulist.classList.toggle("open-menu");
         menubutton.classList.toggle("toggled-button");
       }
-
     </script>
 
 </body>

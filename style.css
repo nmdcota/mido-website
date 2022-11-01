@@ -1097,28 +1097,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Mobile Responsive */
 
 @media(max-width: 1185px) {
@@ -1149,12 +1127,6 @@ header {
         padding-right: 10%;
     }
 }
-
-@media(max-width: 768px) {
-    
-}
-
-
 
 @media(max-width: 628px) {
     #animation {
