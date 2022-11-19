@@ -45,14 +45,14 @@ header {
     background-color: white;
 }
 
-header nav {
+nav {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    gap: 6rem;
 }
 
-header nav a {
+nav a {
     color: black;
     text-decoration: none;
     position: relative;
@@ -76,11 +76,11 @@ nav a:hover:after {
    width: 100%;
 }
 
-header nav a.active-nav {
+nav a.active-nav {
    color: #811999;
 }
 
-header nav.passive-nav {
+nav.passive-nav {
    color: #000000;
 }
 
