@@ -45,26 +45,49 @@ header {
     background-color: white;
 }
 
-.nav__links {
-    list-style: none;
+header nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 6rem;
 }
 
-.nav__links li {
-    display: inline-block;
-    padding: 0 4rem;
-}
-
-.nav__links li a {
+header nav a {
     color: black;
     text-decoration: none;
-    text-decoration-color: #811999;
+    position: relative;
     font-size: 1rem;
     font-weight: 400;
-    transition: all 200ms ease-in;
-    opacity: 1;
 }
 
-.nav__links .passive-nav:hover {
+nav a::after {
+   content: "";
+    background-color: #811999;
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    left: 0;
+    bottom: -0.5rem;
+    transform-origin: center;
+    transition: ease-in-out 300ms;
+}
+
+nav a:hover:after {
+   width: 100%;
+}
+
+header nav a.active-nav {
+   color: #811999;
+}
+
+header nav.passive-nav {
+   color: #000000;
+}
+
+
+
+
+/* .nav__links .passive-nav:hover {
     color: black;
     text-decoration: underline;
     text-decoration-thickness: 0.25rem;
@@ -88,7 +111,7 @@ header {
     text-decoration-thickness: 0.25rem;
     text-decoration-color: #811999;
     text-underline-offset: 0.5rem;
-}
+} */
 
 /* Dropdown Menu */
 
@@ -1107,7 +1130,7 @@ header {
     .contact-button {
         display: none;
     }
-    .nav__links {
+    header nav {
         display: none;
     }
     .menu-link {
